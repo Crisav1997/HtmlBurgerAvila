@@ -1,15 +1,16 @@
+$centrar:center;
 @media only screen and (max-width: 768px){
     .centrar{
-        text-align: center;
+        text-align: $centrar;
     
     }
     p{
-    text-align: center;
+    text-align: $centrar;
     }
     .seguinos{
         color: white;
         font-size: 1rem;
-        text-align: center;
+        text-align: $centrar;
     }
     .achicarWeb{
         width: -webkit-fill-available;
