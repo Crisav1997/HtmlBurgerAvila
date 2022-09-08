@@ -17,9 +17,10 @@
     "url": "https://github.com/Crisav1997/burgerNode/issues"
   },
   "homepage": "https://github.com/Crisav1997/burgerNode#readme",
-  "description": "",
   "dependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

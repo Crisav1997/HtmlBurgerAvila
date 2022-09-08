@@ -1,14 +1,14 @@
 $pad45: 45px;
 $pad40: 40px;
-.padAcord{
-    padding-left: $pad45;
-    padding-right: $pad45;
-    padding-bottom: 30px;
-}
+
 .padCero{
     padding: 0px;
 }
 .padQuince{
     padding-left: $pad40;
     padding-right: $pad40;
+}
+.padAcord{
+    @extend.padQuince;
+    padding-bottom: 30px;
 }
