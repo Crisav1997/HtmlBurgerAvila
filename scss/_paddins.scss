@@ -12,3 +12,11 @@ $pad40: 40px;
     @extend.padQuince;
     padding-bottom: 30px;
 }
+.padRece{
+    @extend.padQuince;
+    padding-top:40px;
+}
+.padReceB{
+    @extend.padQuince;
+    padding-top:85px;
+}
