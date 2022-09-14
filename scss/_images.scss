@@ -3,6 +3,21 @@ $colors:(
     instagram:lightcoral,
     wsp:lightgreen
 );
+@mixin bordes {
+    border-radius: 25px;
+}
+.insta{
+    border: 4px solid map-get($colors,instagram);
+    @include bordes;
+}
+.twitter{
+    border: 4px solid map-get($colors,twitter);
+    @include bordes;
+}
+.wsp{
+    border: 4px solid map-get($colors,wsp);
+    @include bordes;
+}
 .logoRrss{
     display: flex;
     justify-content: space-evenly;
