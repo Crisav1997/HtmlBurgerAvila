@@ -84,7 +84,7 @@ div .anima {
 .padCero {
   padding: 0px; }
 
-.padQuince, .padAcord, .padRece, .padReceB {
+.padQuince, .padAcord, .padRece, .padReceB, .margintable, .marginlist {
   padding-left: 40px;
   padding-right: 40px; }
 
@@ -96,6 +96,12 @@ div .anima {
 
 .padReceB {
   padding-top: 85px; }
+
+.margintable {
+  margin-top: 90px; }
+
+.marginlist {
+  margin-top: 40px; }
 
 .ochenta {
   width: 80%; }
