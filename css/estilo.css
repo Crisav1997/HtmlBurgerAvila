@@ -57,29 +57,10 @@ div .anima {
   div .anima:hover {
     padding-left: 40px; }
 
-@media only screen and (max-width: 768px) {
-  .centrar {
-    text-align: center; }
-  p {
-    text-align: center; }
-  .seguinos {
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-    padding-left: 5%;
-    padding-right: 5%; }
-  .achicarWeb {
-    width: -webkit-fill-available; }
-  .padAcord {
-    padding-left: 20px;
-    padding-right: 20px; }
-  .logoRrss {
-    padding-bottom: 5%; }
-  .table {
-    font-size: 0.9rem; }
-  .recetario {
-    padding-right: 50px;
-    padding-left: 25px; } }
+.instaFrame {
+  width: -webkit-fill-available;
+  margin-left: 25px;
+  margin-right: 10px; }
 
 .padCero {
   padding: 0px; }
@@ -108,6 +89,40 @@ div .anima {
 
 .centrarTxt {
   text-align: center; }
+
+.flexIzq {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline; }
+
+@media only screen and (max-width: 768px) {
+  .centrar {
+    text-align: center; }
+  p {
+    text-align: center; }
+  .seguinos {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%; }
+  .achicarWeb {
+    width: -webkit-fill-available; }
+  .padAcord {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .logoRrss {
+    padding-bottom: 5%; }
+  .table {
+    font-size: 0.9rem; }
+  .recetario {
+    padding-right: 50px;
+    padding-left: 25px; }
+  .flexIzq {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 body {
   padding: 0px;
