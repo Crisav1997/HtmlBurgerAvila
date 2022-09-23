@@ -1,0 +1,24 @@
+.gridRece{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "log nava nava"
+    "txtre txtre txtre"
+    "rece1 rece1 fijo"
+    "rece2 rece2 fijo"
+    "footere footere footere";
+  }
+  .log{grid-area: log;}
+  .nava{grid-area: nava;}
+  .txtre{grid-area: txtre;}
+  .rece1{grid-area: rece1; text-align: left;padding-left: 10%;}
+  .rece2{grid-area: rece2;text-align: left;padding-left: 10%;}
+  .fijo{grid-area: fijo;}
+  .footere{grid-area: footere;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
