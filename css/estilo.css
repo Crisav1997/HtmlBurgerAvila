@@ -130,14 +130,17 @@ body {
 .gridRece {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "log nava nava" "txtre txtre txtre" "rece1 rece1 fijo" "rece2 rece2 fijo" "footere footere footere"; }
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: "log nava nava" "intro intro intro" "txtre txtre txtre" "rece1 rece2 rece2" "rece3 rece4 rece4" "footere footere rrss"; }
 
 .log {
   grid-area: log; }
 
 .nava {
   grid-area: nava; }
+
+.intro {
+  grid-area: intro; }
 
 .txtre {
   grid-area: txtre; }
@@ -152,16 +155,65 @@ body {
   text-align: left;
   padding-left: 10%; }
 
-.fijo {
-  grid-area: fijo; }
+.rece3 {
+  grid-area: rece3;
+  text-align: left;
+  padding-left: 10%; }
+
+.rece4 {
+  grid-area: rece4;
+  text-align: left;
+  padding-left: 10%; }
 
 .footere {
   grid-area: footere;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center; }
+
+.rrss {
+  grid-area: rrss;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+@media only screen and (max-width: 768px) {
+  .gridRece {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "log" "nava" "intro" "txtre" "rece1" "rece2" "rece3" "rece4" "footere" "rrss"; }
+  .log {
+    grid-area: log; }
+  .nava {
+    grid-area: nava; }
+  .txtre {
+    text-align: center;
+    padding-left: 0px;
+    margin: 15px; }
+  .rece1 {
+    text-align: center;
+    padding-left: 0px;
+    margin: 15px; }
+  .rece2 {
+    text-align: center;
+    padding-left: 0px;
+    margin: 15px; }
+  .fijo {
+    display: none; }
+  .footere {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%; }
+  .rrss {
+    margin-top: 8px;
+    margin-bottom: 8px; } }
 
 body {
   padding: 0px;
