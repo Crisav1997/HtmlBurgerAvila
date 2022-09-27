@@ -57,6 +57,13 @@ body {
   .anima:hover {
     padding-left: 40px; }
 
+.anima1 {
+  padding-left: 0px;
+  transition: 2s; }
+
+.anima1:hover {
+  padding-left: 40px; }
+
 .instaFrame {
   padding-right: 50px; }
 
@@ -71,16 +78,25 @@ body {
   padding-bottom: 30px; }
 
 .padRece {
-  padding-top: 40px; }
+  padding-top: 20px; }
 
 .padReceB {
-  padding-top: 85px; }
+  padding-top: 85px;
+  padding-left: 0px;
+  padding-bottom: 30px; }
 
 .margintable {
   margin-top: 90px; }
 
 .marginlist {
   margin-top: 40px; }
+
+.recetario {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem; }
+
+.pad9 {
+  padding-right: 90px; }
 
 .ochenta {
   width: 80%; }
@@ -113,7 +129,7 @@ body {
   .logoRrss {
     padding-bottom: 5%; }
   .table {
-    font-size: 0.9rem; }
+    font-size: 0.7rem; }
   .recetario {
     padding-right: 50px;
     padding-left: 25px; }
@@ -131,13 +147,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: "log nava nava" "intro intro intro" "txtre txtre txtre" "rece1 rece2 rece2" "rece3 rece4 rece4" "footere footere rrss"; }
+  grid-template-areas: "foo foo foo" "intro intro intro" "txtre txtre txtre" "rece1 rece2 rece2" "rece3 rece4 rece4" "footere footere footere"; }
 
-.log {
-  grid-area: log; }
-
-.nava {
-  grid-area: nava; }
+.foo {
+  grid-area: foo;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center; }
 
 .intro {
   grid-area: intro; }
@@ -170,7 +187,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center; }
 
 .rrss {
@@ -179,30 +196,37 @@ body {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: row;
+  width: 450px; }
 
 @media only screen and (max-width: 768px) {
   .gridRece {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
-    grid-template-areas: "log" "nava" "intro" "txtre" "rece1" "rece2" "rece3" "rece4" "footere" "rrss"; }
-  .log {
-    grid-area: log; }
-  .nava {
-    grid-area: nava; }
+    grid-template-areas: "log" "foo" "intro" "txtre" "rece1" "rece2" "rece3" "rece4" "footere" "rrss"; }
+  .foo {
+    flex-direction: column; }
   .txtre {
     text-align: center;
     padding-left: 0px;
     margin: 15px; }
   .rece1 {
     text-align: center;
-    padding-left: 0px;
-    margin: 15px; }
+    padding-right: 0px;
+    padding-left: 0px; }
   .rece2 {
     text-align: center;
-    padding-left: 0px;
-    margin: 15px; }
+    padding-right: 0px;
+    padding-left: 0px; }
+  .rece3 {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px; }
+  .rece4 {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px; }
   .fijo {
     display: none; }
   .footere {
@@ -213,7 +237,12 @@ body {
     padding-right: 5%; }
   .rrss {
     margin-top: 8px;
-    margin-bottom: 8px; } }
+    margin-bottom: 8px;
+    width: 100%; }
+  .padReceB {
+    padding-top: 20px;
+    padding-right: 0px;
+    padding-bottom: 10px; } }
 
 body {
   padding: 0px;

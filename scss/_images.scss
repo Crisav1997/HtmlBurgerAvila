@@ -53,6 +53,13 @@ body{
     &:hover{padding-left: 40px;
     }
 }
+.anima1 {
+    padding-left: 0px;
+    transition: 2s; }
+    .anima1:hover {
+        padding-left: 40px; 
+}
+
 .instaFrame{
     padding-right: 50px;
 }
